@@ -17,9 +17,9 @@ class TestPalindrone(unittest.TestCase):
 
     def test_longest_palindrone(self):
         testcases = [
-            ["avkesekjhkj", "kesek"],
-            ["foobar", "oo"],
-            ["ovo", "ovo"]
+            ["avkesekjhkj", 5],
+            ["foobar", 2],
+            ["ovo", 3]
         ]
         for testcase in testcases:
             with self.subTest(msg=f"Input: {testcase[0]}, Expected: {testcase[1]}"):

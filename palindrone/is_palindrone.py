@@ -26,7 +26,7 @@ def is_palindrone(s: str) -> bool:
 #     return res
 
 
-def longest_palindrone(s: str) -> str:
+def longest_palindrone(s: str) -> int:
     if not s: return ""
     if len(s) == 1: return s
 
@@ -50,7 +50,7 @@ def longest_palindrone(s: str) -> str:
             if len(cur) > len(res):
                 res = cur
         
-    return res
+    return len(res)
 
 
 print(longest_palindrone("avkesekjhkj"))
